@@ -1,1 +1,3 @@
-.github/**
+# Ignore input data excel-sheets
+Input_data
+Input_data/*.xlsx
