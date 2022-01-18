@@ -13,4 +13,4 @@ Input data is stored in a csv file for each city.
 The analysis is done in bikeshare_v1.py.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thank you Udacity and specially Richard Kalehoff for the great learnings in this course "Prgramming for Data-Science Nanodegree - Github"
