@@ -22,16 +22,15 @@ def get_filters():
     print('\nHello! Let\'s explore some US bikeshare data!')
 
     #get user input for city (chicago, new york city, washington).
-    no_valid_city = 1
-    while no_valid_city:
+    while True:
         city = input("Please select a city: Chigaco, New York City or Washington.")
         if city.lower() in CITY_DATA:
-            no_valid_city = 0
+            break
         elif city.lower().startswith('c'):
             confirmation = input("Do you want to see bikeshare data from Chicago? yes or no?")
             if confirmation.lower() == 'yes':
                 city = 'chicago'
-                no_valid_city = 0
+                break
             else:
                 print('\nNo valid input!\n')
                 continue
@@ -39,7 +38,7 @@ def get_filters():
             confirmation = input("Do you want to see bikeshare data from New York City? yes or no?")
             if confirmation.lower() == 'yes':
                 city = 'new york city'
-                no_valid_city = 0
+                break
             else:
                 print('\nNo valid input!\n')
                 continue
@@ -47,7 +46,7 @@ def get_filters():
             confirmation = input("Do you want to see bikeshare data from Washington? yes or no?")
             if confirmation.lower() == 'yes':
                 city = 'washington'
-                no_valid_city = 0
+                break
             else:
                 print('\nNo valid input!\n')
                 continue
