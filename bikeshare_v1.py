@@ -191,7 +191,16 @@ def trip_duration_stats(df, city):
 
 
 def user_stats(df, city):
-    """Displays statistics on bikeshare users."""
+    """
+    Displays statistics on bikeshare users.
+
+    Get information on the users:
+    - gender
+    - min/max birth year
+    - most frequent birth year
+
+    No user data is available in Washington.  
+    """
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
